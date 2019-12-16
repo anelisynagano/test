@@ -1,0 +1,76 @@
+/* header, div, section {
+    border: 1px solid black;
+} */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+    width: 70%;
+    margin: auto;
+    background-color: blueviolet;
+}
+
+.background {
+    background-color: white;
+}
+
+.header {
+    display: flex;
+}
+
+.container {
+    display: flex;
+}
+
+.left-section {
+    width: 30%;
+}
+
+.right-section {
+    width: 70%;
+}
+
+img {
+    width: 200px;
+    border-radius: 25%;
+    padding: 5%;
+}
+
+.photo {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.name {
+    width: 70%;
+}
+
+.name h1 {
+    padding-top: 5%;
+}
+
+.align-right {
+    text-align: right;
+    padding: 5%;
+}
+
+.align-left {
+    padding: 3% ;
+}
+
+@media only screen and (max-width: 600px) {
+    .container, .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-section, .right-section, .photo {
+        width: 100%;
+    }
+
+    img {
+        margin: auto;
+    }
+    
+}
